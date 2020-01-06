@@ -60,7 +60,7 @@ func GetVersion() string {
 
 func GetDisplay() string {
 	if release, ok := mapping[kernelVersion]; ok {
-		return release.name + " " + release.release + " " + release.releaseName
+		return release.name + " " + release.releaseName
 	}
 
 	return "macOS"
